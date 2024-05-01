@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+  background-image: url(foor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    .chet {
+    background-color: #eef7e1;
+    border-radius: 20px;
+}
+        </style>
+    <title>Манулы - кошки с удивительным видом</title>
+</head>
+<body class="body">
+    <div class="container">
+        <h1 class="text-center mt-4">Дикие кошки - Манулы</h1>
+        
+        <div class="row">
+            <div class="col-6">
+                <img src="manul.jpg" class="img-fluid rounded-circle m-3" alt="манул">
+            </div>
+            <div class="col-6">
+                <p class="lead"> Манул - это удивительные кошки, обитающие в центральной азии. Их уникальный вид и характер сделали их популярными среди любителей кошек.
+                    Хищное млекопитающее с вечно недовольной мордой очень похоже на домашнюю кошку, но ведет себя совсем по-другому.
+                </p>
+                <button type="button" class="btn btn-primary m-3" onclick="toggleInfo()">Узнать больше</button>
+            </div>
+            <div id="moreInfo"  style="display:none;" class="chet">
+                <h2 class="text-center mt-4">Манул: где посмотреть на самую редкую кошку в России</h2>
+        <p class="lead">Несмотря на схожие размеры тела, палласов кот выглядит массивнее домашней кошки. Причина «солидной» внешности
+             – очень пушистая шерсть и почти скрытые за волосяным покровом маленькие уши.
+             Из-за постоянно настороженной мордочки манула часто называют «вечно недовольным диким котом». Этот вид кошачьих обитает в Забайкалье и Южной Сибири. Количество манулов в нашей стране оценивается всего в 3000-3650 особей. </p>
+        
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleInfo() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
